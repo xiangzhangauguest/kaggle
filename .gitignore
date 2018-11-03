@@ -2,3 +2,5 @@ data/*
 .idea/
 *.zip
 *.csv
+.DS_Store
+*.pyc
