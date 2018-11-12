@@ -4,3 +4,4 @@ data/*
 *.csv
 .DS_Store
 *.pyc
+.ipynb_checkpoints/
