@@ -60,8 +60,11 @@ def run_lgb(train_X, train_y, val_X, val_y, test_X):
 
 
 if __name__ == "__main__":
+    print("load train data")
     train_df = load_df("../input/train_v2.csv")
+    print("load test data")
     test_df = load_df("../input/test_v2.csv")
+    print("loading done.")
 
     train_df["totals.transactionRevenue"] = train_df["totals.transactionRevenue"].astype('float')
     gdf = train_df.groupby("fullVisitorId")["totals.transactionRevenue"].sum().reset_index()
